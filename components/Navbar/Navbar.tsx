@@ -8,10 +8,21 @@ const Navbar = () => {
 
   return (
     <div className="relative z-10 flex w-full items-center mt-4 p-2">
-      <Image src={Mlogo} alt="Logo" width={50} height={50} className="ml-10" />
-      <p className="font-roboto text-white">Majed Shmait</p>
-      <div className="flex items-center gap-16 ml-[16vw]">
-        {["Home", "About", "Projects", "Contact"].map((item) => (
+      <p className="font-roboto text-white ml-10">Majed Shmait</p>
+      <div className="flex items-center gap-16 ml-[18vw]">
+      <Link href='/'>
+            <p
+              className={`font-roboto cursor-pointer px-2 py-1 text-white ${
+                selected === 'Home'
+                  ? " border-b-2 border-[rgba(0,0,150,0.7)]"
+                  : ""
+              }`}
+              onClick={() => isSelected('Home')}
+            >
+              Home
+            </p>
+          </Link>
+        {["About", "Projects", "Contact"].map((item) => (
           <Link href={`/${item.toLowerCase()}`} key={item}>
             <p
               className={`font-roboto cursor-pointer px-2 py-1 text-white ${
