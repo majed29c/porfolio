@@ -1,14 +1,16 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link";
-
+import Mlogo from "@/public/Mlogo.png";
+import Image from "next/image";
 const Navbar = () => {
   const [selected, isSelected] = useState("Home");
 
   return (
     <div className="relative z-10 flex w-full items-center mt-4 p-2">
-      <p className="font-roboto text-white ml-10">Majed Shmait</p>
-      <div className="flex items-center gap-16 ml-[19vw]">
+      <Image src={Mlogo} alt="Logo" width={50} height={50} className="ml-10" />
+      <p className="font-roboto text-white">Majed Shmait</p>
+      <div className="flex items-center gap-16 ml-[16vw]">
         {["Home", "About", "Projects", "Contact"].map((item) => (
           <Link href={`/${item.toLowerCase()}`} key={item}>
             <p
