@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .text-glow-navy {
+      text-shadow: 
+        0 0 8px rgba(255, 255, 255, 0.3),
+        0 0 15px rgba(0, 0, 128, 0.7);
+    }
+  }
