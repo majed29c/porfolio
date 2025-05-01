@@ -4,6 +4,7 @@ import Image from 'next/image'
 const Hero = () => {
   return (
     <div className='flex items-center '>
+        
     </div>
   )
 }
