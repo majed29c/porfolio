@@ -30,8 +30,10 @@ const Navbar = () => {
     setIsOpen(true);
   }
   return (
+    <>
+    {isOpen && isMobile && <Sidebar isOpen={isOpen} setIsOpen={setIsOpen}/>}
     <div className="relative z-10 flex w-full items-center justify-between mt-4 p-2">
-      {isOpen && isMobile && <Sidebar isOpen={isOpen} setIsOpen={setIsOpen}/>}
+      
       <p className="font-roboto text-white ml-6">Majed Shmait</p>
       <div className="items-center gap-10 hidden md:flex lg:gap-16">
         {["Home", "About", "Projects", "Contact"].map((item) => (
@@ -50,8 +52,8 @@ const Navbar = () => {
         ))}
       </div>
       <div className="flex items-center mr-6">
-        {!isOpen ? 
-        <FiMenu className={`text-white text-3xl md:hidden cursor-pointer ${isOpen ? "hidden" : ""}`} onClick={clickMenuHandler} /> : null}
+        
+        <FiMenu className={`text-white text-3xl md:hidden cursor-pointer`} onClick={clickMenuHandler} />
         <a
           href="/pdf/Majed_Shmait_Resume.pdf"
           className="text-black hidden md:flex"
@@ -67,6 +69,7 @@ const Navbar = () => {
         </a>
       </div>
     </div>
+    </>
   );
 };
 
