@@ -82,7 +82,7 @@ const Hero = () => {
   }, [currentIndex, isDeleting, isPaused, textIndex, variationIndex, aboutMe]);
 
   return (
-    <div className='flex flex-col md:flex-row justify-between items-center w-full mt-12 md:mt-24 mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-24 gap-8 md:gap-12'>
+    <div className='relative z-10 flex flex-col md:flex-row justify-between items-center w-full mt-12 md:mt-24 mx-auto px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-24 gap-8 md:gap-12'>
       <div className='flex flex-col justify-center order-2 md:order-1 basis-1/2 w-full md:w-auto text-center md:text-left'>
         <h1 className='text-2xl sm:text-3xl md:text-3xl lg:text-4xl xl:text-5xl font-roboto text-white mb-4 max-w-[600px] mx-auto md:mx-0 leading-tight'>
           {currentText}

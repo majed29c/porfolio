@@ -30,7 +30,9 @@ export default function RootLayout({
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} bg-black`}>
         <Navbar />
+        <BackgroundBeams className="absolute z-0"/>
         {children}
+          
       </body>
     </html>
   );
