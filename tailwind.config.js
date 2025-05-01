@@ -23,10 +23,15 @@ module.exports = {
           '0%': { transform: 'translateX(0)' },
           '100%': { transform: 'translateX(100%)' },
         },
+        blink: {
+          '0%, 100%': { opacity: '1' },
+          '50%': { opacity: '0' },
+        },
       },
       animation: {
         slideLeft: 'slideLeft 0.5s ease-out forwards',
-        slideRight: 'slideRight 0.5s ease-out forwards', // Fixed to match keyframe name
+        slideRight: 'slideRight 0.5s ease-out forwards',
+        blink: 'blink 1s step-end infinite',
       },
     },
   },
