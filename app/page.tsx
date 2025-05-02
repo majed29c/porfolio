@@ -8,7 +8,7 @@ import {
   SiReact, SiTypescript, SiJavascript, SiPython, SiNextdotjs, 
   SiC, SiCss3, SiHtml5, SiTailwindcss, SiNodedotjs, 
   SiExpress, SiPhp, SiSupabase, SiFirebase, SiMysql, SiPostgresql,
-  SiGithub, SiLinkedin, SiGmail, SiGit
+  SiGithub, SiLinkedin, SiGmail, SiGit, SiNetlify, SiVercel
 } from 'react-icons/si';
 import { FaJava } from 'react-icons/fa';
 import { motion } from 'framer-motion';
@@ -44,6 +44,10 @@ export default function Home() {
     { icon: <SiFirebase className="h-full w-full" />, description: "Firebase - Google's mobile platform", color: "#FFCA28" },
     { icon: <SiMysql className="h-full w-full" />, description: "MySQL - Popular open-source database", color: "#4479A1" },
     { icon: <SiPostgresql className="h-full w-full" />, description: "PostgreSQL - Advanced open-source database", color: "#4169E1" },
+    { icon: <SiNetlify className="h-full w-full" />, description: "Deployment on Netlify", color: "#4169E1" },
+    { icon: <SiVercel className="h-full w-full" />, description: "Deployment on Vercel", color: "#4169E1" },
+    
+    
   ];
 
   const softSkills = [
@@ -78,12 +82,12 @@ export default function Home() {
     <div>
       <Hero/>
       <div className="flex flex-col items-center py-16">
-        <h2 className="text-4xl font-bold text-white mb-16">My Programming Skills</h2>
+        <h2 className="text-4xl font-bold text-white mb-16 text-center">My Programming Skills</h2>
         
         {/* Frontend Skills */}
         <div className="w-full max-w-7xl mx-auto px-4 mb-16">
           <div className="flex justify-between items-center mb-8">
-            <h3 className="text-2xl font-semibold text-white">Frontend Development</h3>
+            <h3 className="text-xl sm:text-2xl font-semibold text-white">Frontend Development</h3>
             <button
               onClick={() => setShowFrontend(!showFrontend)}
               className="px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 text-white font-medium transition-all duration-300 backdrop-blur-sm border border-white/10"
@@ -112,7 +116,7 @@ export default function Home() {
         {/* Backend Skills */}
         <div className="w-full max-w-7xl mx-auto px-4 mb-16">
           <div className="flex justify-between items-center mb-8">
-            <h3 className="text-2xl font-semibold text-white">Backend Development</h3>
+            <h3 className="ext-xl sm:text-2xl  font-semibold text-white">Backend Development</h3>
             <button
               onClick={() => setShowBackend(!showBackend)}
               className="px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 text-white font-medium transition-all duration-300 backdrop-blur-sm border border-white/10"
@@ -141,7 +145,7 @@ export default function Home() {
         {/* Other Skills */}
         <div className="w-full max-w-7xl mx-auto px-4 mb-16">
           <div className="flex justify-between items-center mb-8">
-            <h3 className="text-2xl font-semibold text-white">Other Technologies</h3>
+            <h3 className="ext-xl sm:text-2xl  font-semibold text-white">Other Technologies</h3>
             <button
               onClick={() => setShowOther(!showOther)}
               className="px-4 py-2 rounded-lg bg-white/10 hover:bg-white/20 text-white font-medium transition-all duration-300 backdrop-blur-sm border border-white/10"
@@ -169,7 +173,7 @@ export default function Home() {
 
         {/* Soft Skills Section */}
         <div className="flex flex-col items-center py-16">
-          <h2 className="text-4xl font-bold text-white mb-16">Soft Skills & Experience</h2>
+          <h2 className="text-4xl font-bold text-white mb-16 text-center">Soft Skills & Experience</h2>
           
           {/* GDG Badge */}
           <motion.div 

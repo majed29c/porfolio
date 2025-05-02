@@ -29,7 +29,7 @@ const Sidebar = ({ isOpen, setIsOpen }: SidebarProps) => {
 
   return (
     <div
-      className={`fixed top-0 right-0 flex flex-col h-screen w-[50vw] md:w-[50vw] px-6 py-6 space-y-6 bg-white text-black font-roboto opacity-98 z-20 
+      className={`fixed top-0 right-0 flex flex-col h-screen w-[50vw] md:w-[50vw] px-6 py-6 space-y-6 bg-white/85 text-black font-roboto opacity-98 z-20 
         transition-all ease-in-out duration-500 transform ${isOpen ? 'animate-slideLeft' : ''} ${isClosed? 'animate-slideRight': ''}`}
       style={{ 
         position: 'fixed',

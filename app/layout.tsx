@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { SelectedProvider } from "@/context/SelectedContext";
+
 import Navbar from "@/components/Navbar/Navbar";
 import { BackgroundBeams } from "@/components/ui/background-beams";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -26,13 +29,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/Mlogo.png" /> 
+        <link rel="icon" href="/Mlogo.png" />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} bg-black`}>
-        <Navbar />
-        <BackgroundBeams className="fixed z-0"/>
-        {children}
-          
+        <SelectedProvider>
+          <Navbar />
+          <BackgroundBeams className="fixed z-0" />
+          {children}
+        </SelectedProvider>
       </body>
     </html>
   );
