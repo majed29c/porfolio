@@ -101,7 +101,7 @@ const Footer = () => {
                 <SiLinkedin className="w-6 h-6" />
               </motion.a>
               <motion.a
-                href="https://instagram.com/majedshmait"
+                href="https://instagram.com/majed_shmait"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ y: -3 }}

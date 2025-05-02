@@ -55,14 +55,7 @@ const ProjectsPage = () => {
             </h2>
             <p className="text-gray-400 text-center flex-grow">{project.description}</p>
             {/* Link before the button */}
-            <a
-              href={project.link}
-              className="text-blue-400 hover:underline mt-4"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Learn More
-            </a>
+            
             <a href={project.link} target="_blank" rel="noopener noreferrer">
             <button className="mt-4 px-4 py-2 bg-blue-600 hover:bg-blue-700 rounded-md text-white transition-colors duration-300">
               View Details
