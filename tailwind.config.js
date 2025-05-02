@@ -11,7 +11,7 @@ module.exports = {
         roboto: ['Roboto', 'sans-serif'],
       },
       screens:{
-        xs : '375px',
+        xs : '280px',
         
       },
       keyframes: {
