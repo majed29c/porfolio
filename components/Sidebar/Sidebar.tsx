@@ -29,7 +29,7 @@ const Sidebar = ({ isOpen, setIsOpen }: SidebarProps) => {
 
   return (
     <div
-      className={`fixed top-0 right-0 flex flex-col h-screen w-[55vw] md:w-[50vw] px-6 py-6 space-y-6 bg-white/85 text-black font-roboto opacity-98 z-20 
+      className={`fixed top-0 right-0 flex flex-col h-screen w-[55vw] md:w-[50vw] px-6 py-6 space-y-6 bg-[#525050f6] text-black font-roboto opacity-98 z-20 
         transition-all ease-in-out duration-500 transform ${isOpen ? 'animate-slideLeft' : ''} ${isClosed ? 'animate-slideRight' : ''}`}
       style={{
         position: 'fixed',
@@ -41,7 +41,7 @@ const Sidebar = ({ isOpen, setIsOpen }: SidebarProps) => {
       }}
     >
       <button
-        className="absolute top-2 right-2 z-20 text-black hover:text-gray-300 transition-colors"
+        className="absolute top-2 right-2 z-20 text-black transition-colors"
         onClick={handleClose}
       >
         <X size={24} />
@@ -52,7 +52,7 @@ const Sidebar = ({ isOpen, setIsOpen }: SidebarProps) => {
           <Link
             key={item.name}
             href={item.path}
-            className="flex items-center gap-3 text-lg hover:text-gray-300 transition-colors"
+            className="flex items-center gap-3 text-lg transition-colors"
             onClick={handleClose}
           >
             {item.icon}
@@ -63,7 +63,7 @@ const Sidebar = ({ isOpen, setIsOpen }: SidebarProps) => {
         {/* CV Download Button */}
         <a
           href="/pdf/Majed_Shmait_Resume.pdf"
-          className="flex items-center gap-3 text-lg hover:text-gray-300 transition-colors"
+          className="flex items-center gap-3 text-lg  transition-colors"
           download="Majed_Shmait_Resume.pdf"
         >
           <FiDownload size={20} /> {/* Icon */}

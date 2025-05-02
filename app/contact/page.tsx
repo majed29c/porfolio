@@ -129,7 +129,6 @@ const Page = () => {
           <a
             href="mailto:majedshmaitlu@gmail.com"
             className="text-blue-600 hover:underline"
-            target="_blank" rel="noopener noreferrer"
           >
             majedshmaitlu@gmail.com
           </a>
