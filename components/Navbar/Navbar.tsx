@@ -70,9 +70,9 @@ return () => {
             onClick={clickMenuHandler}
           />
           <a
-            href="/pdf/Majed_Shmait_Resume.pdf"
+            href="/pdf/Majed_Shmait_CV.pdf"
             className="text-black hidden md:flex"
-            download="Majed_Shmait_Resume.pdf"
+            download="Majed_Shmait_CV.pdf"
           >
             <button
               className="border-none bg-white font-roboto rounded-md p-2
